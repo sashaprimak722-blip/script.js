@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игровой уголок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 Игровой уголок</h1>
+        <p>Добро пожаловать! Здесь можно отдохнуть и поиграть.</p>
+    </header>
+
+    <main>
+        <!-- Блок с игрой -->
+        <section class="game-card">
+            <h2>Угадай число</h2>
+            <p>Я загадал число от 1 до 100. Попробуй угадать его за минимальное количество попыток!</p>
+            
+            <div class="game-controls">
+                <input type="number" id="guessInput" placeholder="Введи число..." min="1" max="100">
+                <button id="guessBtn">Проверить</button>
+            </div>
+
+            <!-- Здесь будет появляться текст: "Больше", "Меньше" или "Угадал!" -->
+            <p id="message"></p>
+            <!-- Здесь будет считаться количество попыток -->
+            <p id="attempts">Попыток: 0</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Создано с нуля</p>
+    </footer>
+
+    <!-- Подключаем наш скрипт -->
+    <script src="script.js"></script>
+</body>
+</html>
