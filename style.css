@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e; /* Тёмно-синий фон */
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #16213e;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #0f3460;
+}
+
+header h1 {
+    color: #e94560; /* Ярко-красный акцент */
+    margin-bottom: 10px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.game-card {
+    background: #16213e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #0f3460;
+}
+
+.game-card h2 {
+    color: #e94560;
+    margin-bottom: 15px;
+}
+
+.game-card p {
+    margin-bottom: 20px;
+}
+
+.game-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 2px solid #0f3460;
+    background-color: #1a1a2e;
+    color: white;
+    width: 60%;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #e94560;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff6b81;
+}
+
+#message {
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-height: 30px;
+    color: #f39c12; /* Оранжевый цвет для сообщений */
+}
+
+#attempts {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #16213e;
+    color: #888;
+    border-top: 1px solid #0f3460;
+}
